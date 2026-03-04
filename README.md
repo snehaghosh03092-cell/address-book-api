@@ -25,8 +25,9 @@ Data is stored in **SQLite** via **SQLAlchemy ORM**, and validation is handled u
 git clone <your-repo-link>
 cd address-book-api
 
-2. Create a virtual environment:
+### 2. Create a virtual environment:
 
+```bash
 python3 -m venv venv
 source venv/bin/activate   # Linux / Mac
 # venv\Scripts\activate    # Windows
