@@ -42,6 +42,7 @@ uvicorn app.main:app --reload
 
 # Open Swagger UI
 # http://127.0.0.1:8000/docs
+```
 
 ## API Endpoints
 
@@ -51,9 +52,9 @@ uvicorn app.main:app --reload
 - **DELETE** `/addresses/{id}` → Delete address
 - **GET** `/addresses/search` → Search addresses within distance
 
-Sample JSON
+## Sample JSON
 
-1. Create / Update Address
+1. **Create / Update Address**
    {
     "name": "Home",
     "street": "123 Main Street",
@@ -62,10 +63,10 @@ Sample JSON
     "longitude": 77.5946
    }
 
-2. Search Addresses
+2. **Search Addresses**
    GET /addresses/search?latitude=12.9716&longitude=77.5946&distance_km=5
 
-PROJECT STRUCTURE
+## PROJECT STRUCTURE
 
 address-book-api/
 ├── app/
@@ -81,7 +82,7 @@ address-book-api/
 ├── .gitignore                # Ignore files
 └── README.md                 # Project documentation
 
-Logging
+## Logging
 
 All requests, responses, and database errors are logged using Python’s logging module.
 Example log output:
