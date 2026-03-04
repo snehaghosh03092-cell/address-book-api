@@ -17,39 +17,31 @@ Data is stored in **SQLite** via **SQLAlchemy ORM**, and validation is handled u
 
 ---
 
-## Setup
-
-### 1. Clone the repository
+## Quick Setup
 
 ```bash
+# Clone the repository
 git clone <your-repo-link>
 cd address-book-api
 
-### 2. Create a virtual environment:
-
-```bash
+# Create and activate virtual environment
 python3 -m venv venv
 source venv/bin/activate   # Linux / Mac
 # venv\Scripts\activate    # Windows
 
-3. Install dependencies:
-
+# Install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
 
-4. Create .env file (if not already):
+# Create .env file if not exists
+echo "DATABASE_URL=sqlite:///./addresses.db" >> .env
+echo "DEBUG=True" >> .env
 
-DATABASE_URL=sqlite:///./addresses.db
-DEBUG=True
-
-5. Start the FastAPI server:
-
+# Start FastAPI server
 uvicorn app.main:app --reload
 
-6. Open Swagger UI in your browser:
-
-http://127.0.0.1:8000/docs
-
+# Open Swagger UI
+# http://127.0.0.1:8000/docs
 
 
 API Endpoints
