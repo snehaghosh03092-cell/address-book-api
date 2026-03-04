@@ -55,6 +55,7 @@ uvicorn app.main:app --reload
 ## Sample JSON
 
 1. **Create / Update Address**
+   
    {
     "name": "Home",
     "street": "123 Main Street",
@@ -63,11 +64,12 @@ uvicorn app.main:app --reload
     "longitude": 77.5946
    }
 
-2. **Search Addresses**
+3. **Search Addresses**
+   
    GET /addresses/search?latitude=12.9716&longitude=77.5946&distance_km=5
 
 ## PROJECT STRUCTURE
-
+```
 address-book-api/
 ├── app/
 │   ├── main.py               # FastAPI app instance
@@ -81,7 +83,7 @@ address-book-api/
 ├── requirements.txt          # Python dependencies
 ├── .gitignore                # Ignore files
 └── README.md                 # Project documentation
-
+```
 ## Logging
 
 All requests, responses, and database errors are logged using Python’s logging module.
