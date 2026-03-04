@@ -47,9 +47,14 @@ uvicorn app.main:app --reload
 API Endpoints
 
 POST /addresses/ → Create address
+
 GET /addresses/{id} → Get address by ID
+
 PUT /addresses/{id} → Update address
+
 DELETE /addresses/{id} → Delete address
+
+GET /addresses/search → Search addresses within distance
 
 Sample JSON
 
