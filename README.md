@@ -87,7 +87,9 @@ address-book-api/
 ## Logging
 
 All requests, responses, and database errors are logged using Python’s logging module.
+
 Example log output:
 
 2026-03-04 14:44:34,935 [INFO Incoming request: POST http://127.0.0.1:8000/addresses/]
+
 2026-03-04 14:44:34,936 [INFO Address 1 created successfully]
