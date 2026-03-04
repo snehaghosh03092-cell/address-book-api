@@ -43,18 +43,15 @@ uvicorn app.main:app --reload
 # Open Swagger UI
 # http://127.0.0.1:8000/docs
 
+---
 
-API Endpoints
+## API Endpoints
 
-POST /addresses/ → Create address
-
-GET /addresses/{id} → Get address by ID
-
-PUT /addresses/{id} → Update address
-
-DELETE /addresses/{id} → Delete address
-
-GET /addresses/search → Search addresses within distance
+- **POST** `/addresses/` → Create address
+- **GET** `/addresses/{id}` → Get address by ID
+- **PUT** `/addresses/{id}` → Update address
+- **DELETE** `/addresses/{id}` → Delete address
+- **GET** `/addresses/search` → Search addresses within distance
 
 Sample JSON
 
